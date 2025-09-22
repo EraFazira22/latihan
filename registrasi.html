@@ -1,0 +1,25 @@
+<div class="container mt-5" style="max-width:420px;">
+  <h2 class="text-center mb-4">Register</h2>
+  <form id="registerForm">
+    <div class="mb-3">
+      <label for="name" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter full name" required>
+    </div>
+    <div class="mb-3">
+      <label for="emailReg" class="form-label">Email</label>
+      <input type="email" class="form-control" id="emailReg" placeholder="Enter email" required>
+    </div>
+    <div class="mb-3">
+      <label for="passwordReg" class="form-label">Password</label>
+      <input type="password" class="form-control" id="passwordReg" placeholder="Password" required>
+    </div>
+    <button type="submit" class="btn btn-success w-100">Register</button>
+  </form>
+</div>
+
+<script>
+document.getElementById('registerForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  alert('Registrasi berhasil! Selamat datang, ' + document.getElementById('name').value);
+});
+</script>
