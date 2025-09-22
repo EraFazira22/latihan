@@ -1,3 +1,3 @@
 <?php
-    echo "fitur a"
+    echo "fitur a anjay"
 ?>
